@@ -152,23 +152,23 @@ const eyeColor = {
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  eyeColor[blue].push(starWarsCharacters[i].eye_color === blue);
+  eyeColor["blue"].push(starWarsCharacters[i].eye_color === "blue");
 }
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  eyeColor.push(starWarsCharacters[i].eye_color === yellow);
+  eyeColor["yellow"].push(starWarsCharacters[i].eye_color === "yellow");
 }
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  eyeColor.push(starWarsCharacters[i].eye_color === brown);
+  eyeColor["brown"].push(starWarsCharacters[i].eye_color === "brown");
 }
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  eyeColor.push(starWarsCharacters[i].eye_color === red);
+  eyeColor["red"].push(starWarsCharacters[i].eye_color === "red");
 }
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  eyeColor.charactersNames.push(starWarsCharacters[i].eye_color === "blue-gray");
+  eyeColor["blue-gray"].push(starWarsCharacters[i].eye_color === "blue-gray");
 }
 
 console.log(eyeColor)
@@ -178,9 +178,6 @@ console.log(eyeColor)
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-
-while
-
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
@@ -194,20 +191,9 @@ while
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-const massCiurma
-
-if (massCiurma > 0 && massCiurma < 500) { console.log("Ship is under loaded") }
-else if (massCiurma > 500 && massCiurma < 700) { console.log("Ship is half loaded") }
-else if (massCiurma > 700 && massCiurma < 900) { console.log("Warning: Load is over 700") }
-else if (massCiurma > 900 && massCiurma < 1000) { console.log("Critical Load: Over 900") }
-else { console.log("DANGER! OVERLOAD ALERT: escape from ship now!") }
-
-
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
-
-
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
