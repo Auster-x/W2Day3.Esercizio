@@ -113,7 +113,7 @@ let charactersNames = []
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for (let i = 0; i < starWarsCharacters.lenght; i++) {
+for (let i = 0; i < starWarsCharacters.length; i++) {
   charactersNames.push(starWarsCharacters[i].name);
 }
 
@@ -124,12 +124,10 @@ console.log(charactersNames)
 */
 const femaleCharacters = []
 
-for (let i = 0; i < starWarsCharacters.lenght; i++) {
+for (let i = 0; i < starWarsCharacters.length; i++) {
   const targetCharacter = starWarsCharacters[i]
-  const targetGender =  starWarsCharacters[i].gender
-  femaleCharacters.push(starWarsCharacters[i].gender);
-  if (targetGender==="female") {femaleCharacters.push(targetCharacter)};
-  else 
+  const targetGender = starWarsCharacters[i].gender
+  if (targetGender === "female") { femaleCharacters.push(targetCharacter) };
 }
 
 console.log(femaleCharacters)
@@ -140,7 +138,11 @@ console.log(femaleCharacters)
 */
 
 const eyeColor = {
-  
+  blue: [],
+  yellow: [],
+  brown: [],
+  red: [],
+  'blue-gray': [],
 }
 
 
@@ -149,31 +151,35 @@ const eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-switch (defName) {
-	case 'Aldo':
-		yourName.innerText = 'Ti chiami Aldo';
-		break;
-
-	case 'Maria':
-		yourName.innerText = 'Ti chiami Maria';
-		break;
-
-	case 'Antonio':
-		yourName.innerText = 'Ti chiami Antonio';
-		break;
-
-	case 'Giovanna':
-		yourName.innerText = 'Ti chiami Giovanna';
-
-	case 'Mario':
-		yourName.innerText = 'Ti chiami Mario';
-		break;
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  eyeColor[blue].push(starWarsCharacters[i].eye_color === blue);
 }
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  eyeColor.push(starWarsCharacters[i].eye_color === yellow);
+}
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  eyeColor.push(starWarsCharacters[i].eye_color === brown);
+}
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  eyeColor.push(starWarsCharacters[i].eye_color === red);
+}
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  eyeColor.charactersNames.push(starWarsCharacters[i].eye_color === "blue-gray");
+}
+
+console.log(eyeColor)
+
+
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 
+while
 
 
 /* ESERCIZIO 7
@@ -188,9 +194,20 @@ switch (defName) {
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+const massCiurma
+
+if (massCiurma > 0 && massCiurma < 500) { console.log("Ship is under loaded") }
+else if (massCiurma > 500 && massCiurma < 700) { console.log("Ship is half loaded") }
+else if (massCiurma > 700 && massCiurma < 900) { console.log("Warning: Load is over 700") }
+else if (massCiurma > 900 && massCiurma < 1000) { console.log("Critical Load: Over 900") }
+else { console.log("DANGER! OVERLOAD ALERT: escape from ship now!") }
+
+
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
